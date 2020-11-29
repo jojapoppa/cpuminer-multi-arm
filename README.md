@@ -1,5 +1,5 @@
-CPUMiner-Multi
-==============
+CPUMiner-Multi-Arm
+==================
 
 [![Build Status](https://travis-ci.org/tpruvot/cpuminer-multi.svg)](https://travis-ci.org/tpruvot/cpuminer-multi)
 
