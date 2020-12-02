@@ -1,3 +1,3 @@
 ./autogen.sh
-./configure CFLAGS="-march=native -mfpu=neon -flax-vector-conversions" --with-crypto --with-curl
+./configure CFLAGS="-march=native -flax-vector-conversions" --with-crypto --with-curl
 make
