@@ -1377,10 +1377,11 @@ static const char *getwork_req =
 #define GBT_CAPABILITIES "[\"coinbasetxn\", \"coinbasevalue\", \"longpoll\", \"workid\"]"
 
 static const char *gbt_req =
-	"{\"method\": \"getblocktemplate\", \"params\": [{\"capabilities\": "
+	"{\"method\": \"getblocktemplate\", \"params\": [{\"rules\": [\"segwit\"], \"capabilities\": "
 	GBT_CAPABILITIES "}], \"id\":0}\r\n";
+
 static const char *gbt_lp_req =
-	"{\"method\": \"getblocktemplate\", \"params\": [{\"capabilities\": "
+	"{\"method\": \"getblocktemplate\", \"params\": [{\"rules\": [\"segwit\"], \"capabilities\": "
 	GBT_CAPABILITIES ", \"longpollid\": \"%s\"}], \"id\":0}\r\n";
 
 static bool get_upstream_work(CURL *curl, struct work *work)
